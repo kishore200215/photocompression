@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Image compression 
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename="css/compression.css") }}">
+        <!-- <link rel="stylesheet" href="../static/css/compression.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
+
+    </head>
+    <body> 
+        <h1> KDM COMPRESSOR</h1>
+        <script src="{{ url_for('static', filename="js/javascript.js") }}"></script>
+        <div class="upload-container">
+            <form action="#" id="files-form">
+                <input type="file" id="file_upload" multiple="true" enctype = "multipart/form-data">
+                <button class="upload-btn" onclick="uploadFile() ">Submit</button>
+            </form>
+      </div>
+      
+      <br>
+      <button class="delete-file" onclick="deleteFiles()">Reset</button>
+      <button class="btn" ><i class="fa fa-download"></i> Download</button>
+      <p align="center"> Select the jpg image from your device ,Or drag files to the drop area.wait for the compression to finish.</p>
+      
+      
+    </body>
+    
+</html>
